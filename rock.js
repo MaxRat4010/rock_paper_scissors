@@ -3,4 +3,18 @@ function getComputerChoice() {
     let rand = Math.floor(Math.random() * choices.length);
     return choices[rand];
 }
-getComputerChoice();
+
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
+        return `It's a tie! You both picked ${playerSelection}`;
+    } else if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
+        return "You won! Rock beats Scissors";
+    } else if (playerSelection === 'Paper' && computerSelection === 'Rock') {
+        return "You won! Paper beats Rock";
+    } else if (playerSelection === 'Scissors' && computerSelection === 'Paper') {
+        return "You won! Scissors beats Paper";
+    } else {
+        return `You lose! ${computerSelection} beats ${playerSelection}`;
+    }
+}
+
