@@ -36,6 +36,14 @@ function game() {
         let result = playRound(playerSelection, computerSelection);
         console.log(result);
         
+        if (result === playerWinsRound) {
+            playerScore++
+            console.log("Your score: "+ playerScore);
+        } else if (result === computerWinsRound) {
+            computerScore++
+            console.log("Computer score: " + computerScore);
+        }
+        
         
     }
 }
