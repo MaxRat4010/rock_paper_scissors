@@ -50,7 +50,9 @@ function game() {
             console.log("You lost to the computer, you suck!")
         }
 
-        
+        if (playerScore == 5 || computerScore == 5) {
+            break;
+        }
     }
 }
 game();
