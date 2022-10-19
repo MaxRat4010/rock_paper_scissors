@@ -22,9 +22,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-//const playerSelection = prompt("Rock, Paper, or Scissors?", '').toLowerCase();
-//const computerSelection = getComputerChoice();
-//console.log(playRound(prompt("Rock, Paper, or Scissors?", '').toLowerCase(), getComputerChoice()));
 
 function game() {
     let playerScore = 0
