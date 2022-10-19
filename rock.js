@@ -44,6 +44,12 @@ function game() {
             console.log("Computer score: " + computerScore);
         }
         
+        if (playerScore == 5) {
+            console.log("You won the whole game!");
+        } else if (computerScore == 5) {
+            console.log("You lost to the computer, you suck!")
+        }
+
         
     }
 }
